@@ -1,0 +1,1282 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxe Nails — манікюрний салон</title>
+  <meta name="description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="uk_UA" />
+  <meta property="og:title" content="Luxe Nails — манікюрний салон" />
+  <meta property="og:description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
+  <!-- Соцмережі читають ці три теги з HTML, не з JS. Після публікації впишіть siteUrl у SITE_CONFIG і сюди повні адреси: og:url = siteUrl, og:image і twitter:image = siteUrl + /images/luxe-nails/hero.jpg (без подвійного слеша). -->
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="images/luxe-nails/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Luxe Nails — манікюрний салон" />
+  <meta name="twitter:description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
+  <meta name="twitter:image" content="images/luxe-nails/hero.jpg" />
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23F7E6E9'/%3E%3Cg fill='%23D4899A' transform='translate(4 4)'%3E%3Cpath d='M12 2.25c.41 0 .75.34.75.75v1.13a8.87 8.87 0 0 1 7.12 7.12h1.13a.75.75 0 0 1 0 1.5h-1.13a8.87 8.87 0 0 1-7.12 7.12v1.13a.75.75 0 0 1-1.5 0v-1.13a8.87 8.87 0 0 1-7.12-7.12H2.25a.75.75 0 0 1 0-1.5h1.13A8.87 8.87 0 0 1 10.5 4.13V3c0-.41.34-.75.75-.75Z'/%3E%3C/g%3E%3C/svg%3E"
+  />
+  <script type="application/ld+json" id="schema-nailsalon"></script>
+  <!-- Для нового клієнта змінюйте лише SITE_CONFIG нижче. -->
+  <script>
+    window.SITE_CONFIG = {
+      name: "Luxe Nails",
+      siteUrl: "",
+      slogan: "Салон ніжного догляду",
+      tagline: "Ідеальний манікюр,\nякий тримається.",
+      description:
+        "Стерильні інструменти, преміальні гель-лаки та майстри, які чують ваш стиль. Запишіться сьогодні — і виходьте з блиском, ніби щойно з обкладинки.",
+      phone: "+380671234567",
+      phoneDisplay: "+38 (067) 123-45-67",
+      telegram: "https://t.me/luxenails_kyiv",
+      viber: "viber://chat?number=%2B380671234567",
+      instagram: "https://instagram.com/luxenails.kyiv",
+      instagramHandle: "@luxenails.kyiv",
+      address: {
+        street: "вул. Велика Васильківська, 24",
+        city: "Київ",
+        postalCode: "01004",
+        full: "вул. Велика Васильківська, 24, Київ",
+        lat: 50.4398,
+        lng: 30.5169,
+      },
+      hours: {
+        display: "Щодня, 10:00 — 21:00",
+        open: "10:00",
+        close: "21:00",
+        schema: "Mo-Su 10:00-21:00",
+      },
+      stats: [
+        { label: "Досвід", value: "8+" },
+        { label: "Клієнток", value: "4k" },
+        { label: "Рейтинг", value: "4.9" },
+      ],
+      rating: { value: 4.9, count: 412 },
+      hero: {
+        image: "images/luxe-nails/hero.jpg",
+        imageAlt: "Акуратний нюдовий манікюр у салоні Luxe Nails",
+        cardTitle: "Нюд, який виглядає дорого",
+        cardText: "Без сколів. Без поспіху. З турботою про кутикулу.",
+      },
+      benefits: {
+        eyebrow: "Чому ми",
+        title: "Три речі, на яких ми не економимо",
+        intro:
+          "Краса нігтів починається з гігієни, ритму майстра і якості матеріалів — не з випадкового кольору з полиці.",
+        items: [
+          {
+            title: "Стерильність",
+            text: "Кожен інструмент проходить сухожар. Одноразові файли, чисті рушники та прозорий протокол між клієнтками.",
+            icon: "shield",
+          },
+          {
+            title: "Швидкість",
+            text: "Комбінований манікюр за 60–90 хвилин без втрати якості. Ви не чекаєте «ще хвилинку» — слот ваш і лише ваш.",
+            icon: "clock",
+          },
+          {
+            title: "Матеріали",
+            text: "Гель-лаки преміум-лінійок, каучукові бази та топи, що тримають блиск до 3–4 тижнів без жовтизни.",
+            icon: "spark",
+          },
+        ],
+      },
+      prices: [
+        {
+          id: "manicure",
+          name: "Манікюр",
+          description: "Чиста форма, здорові нігті, акуратна кутикула.",
+          featured: false,
+          items: [
+            { name: "Класичний / комбінований", price: "450 ₴" },
+            { name: "Апаратний манікюр", price: "550 ₴" },
+            { name: "Чоловічий манікюр", price: "500 ₴" },
+          ],
+        },
+        {
+          id: "coating",
+          name: "Покриття",
+          description: "Стійкий блиск і колір, який не сколюється на третій день.",
+          featured: true,
+          badge: "Найчастіше обирають",
+          items: [
+            { name: "Гель-лак (однотон)", price: "750 ₴" },
+            { name: "Укріплення + гель-лак", price: "950 ₴" },
+            { name: "Дизайн (від 1 нігтя)", price: "від 50 ₴" },
+          ],
+        },
+        {
+          id: "pedicure",
+          name: "Педикюр",
+          description: "М’яка шкіра, акуратні пальчики, комфорт у будь-якому взутті.",
+          featured: false,
+          items: [
+            { name: "Класичний педикюр", price: "800 ₴" },
+            { name: "Апаратний + покриття", price: "1 100 ₴" },
+            { name: "Експрес SPA-догляд", price: "950 ₴" },
+          ],
+        },
+      ],
+      masters: [
+        {
+          name: "Олена Коваль",
+          experience: "8 років досвіду",
+          specialty: "Нюд, укріплення, чиста кутикула",
+          photo: "images/luxe-nails/master-1.jpg",
+        },
+        {
+          name: "Марія Лисенко",
+          experience: "6 років досвіду",
+          specialty: "Дизайн, френч, складні форми",
+          photo: "images/luxe-nails/master-2.jpg",
+        },
+        {
+          name: "Ірина Мельник",
+          experience: "5 років досвіду",
+          specialty: "Педикюр, SPA, апаратний догляд",
+          photo: "images/luxe-nails/master-3.jpg",
+        },
+      ],
+      reviews: [
+        {
+          name: "Тетяна",
+          text: "Нюд тримається четвертий тиждень без сколів. Кутикула жива, ніби після догляду, а не після «зрізали все».",
+          source: "Google",
+        },
+        {
+          name: "Анна",
+          text: "Записуюсь до Олени вже рік. Завжди вчасно, стерильно, колір підбирають під шкіру, а не «що є в палітрі».",
+          source: "Instagram",
+        },
+        {
+          name: "Софія",
+          text: "Педикюр перед відпусткою — ноги як після салону ще два тижні. Взуття не натирає, покриття не жовтіє.",
+          source: "Google",
+        },
+        {
+          name: "Катерина",
+          text: "Дизайн зробили з референсу один в один. Без доплат «ну це складно». Дуже спокійна атмосфера.",
+          source: "Instagram",
+        },
+      ],
+      reviewsCaption: "Відгуки з Instagram / Google",
+      faq: [
+        {
+          q: "Скільки тримається покриття?",
+          a: "Гель-лак з укріпленням зазвичай тримається 3–4 тижні без сколів, якщо не підпилювати торець і не зривати покриття самостійно.",
+        },
+        {
+          q: "Чи можна прийти зі своїм дизайном?",
+          a: "Так. Надішліть референс у коментарі до запису або в Instagram — майстер оцінить час і скаже, чи входить дизайн у вартість.",
+        },
+        {
+          q: "Що робити при сколі?",
+          a: "Не відривайте покриття. Напишіть нам — протягом 5 днів після візиту ремонт одного нігтя робимо безкоштовно, далі — за прайсом.",
+        },
+        {
+          q: "Скільки триває процедура?",
+          a: "Комбінований манікюр з покриттям — 60–90 хвилин, педикюр з покриттям — близько 90 хвилин. Слот ваш, без накладання клієнток.",
+        },
+        {
+          q: "Чи є паркінг?",
+          a: "Так, біля будинку є гостьові місця та паркінг ТРЦ Gulliver за 4 хвилини пішки. Можна під’їхати до під’їзду, щоб висадити.",
+        },
+      ],
+      gallery: [
+        {
+          src: "images/luxe-nails/gallery-1.jpg",
+          alt: "Манікюр з нюдовим покриттям і акуратним блиском",
+        },
+        {
+          src: "images/luxe-nails/gallery-2.jpg",
+          alt: "Пастельний манікюр після покриття гель-лаком",
+        },
+        {
+          src: "images/luxe-nails/gallery-3.jpg",
+          alt: "Доглянутий манікюр і форма нігтів",
+        },
+        {
+          src: "images/luxe-nails/gallery-4.jpg",
+          alt: "Педикюр з охайним покриттям",
+        },
+        {
+          src: "images/luxe-nails/gallery-5.jpg",
+          alt: "Манікюр і педикюр у ніжній пастельній гамі",
+        },
+        {
+          src: "images/luxe-nails/gallery-6.jpg",
+          alt: "Манікюр з ніжним покриттям крупним планом",
+        },
+      ],
+      galleryLayout: "carousel",
+      booking: {
+        eyebrow: "Запис і контакти",
+        title: "Запишіться — підтвердимо за 15 хвилин",
+        text: "Напишіть ім’я, послугу та зручний час. Адміністратор підтвердить запис у месенджері протягом 15 хвилин у робочі години.",
+      },
+      web3formsKey: "479dd483-2965-4ee9-83ec-1f1bc8a706cc",
+      footerNote: "Пастель, стерильність, блиск.",
+      year: 2026,
+      portfolio: {
+        enabled: true,
+        author: "Тетяна Дорош",
+        contactUrl: "https://t.me/dorosh_tatiana",
+      },
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            powder: {
+              50: "#FBF7F3",
+              100: "#F6EDE6",
+              200: "#EEDDD3",
+              300: "#E4C9BB",
+              400: "#D4A99A",
+            },
+            blush: {
+              50: "#FBF4F5",
+              100: "#F7E6E9",
+              200: "#EFC9D0",
+              300: "#E3A8B4",
+              400: "#D4899A",
+            },
+            ink: {
+              700: "#4A4240",
+              800: "#3A3331",
+              900: "#2C2624",
+            },
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', "Georgia", "serif"],
+            sans: ['"Manrope"', "system-ui", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    body { padding-bottom: 5.5rem; }
+    @media (min-width: 1024px) {
+      body { padding-bottom: 0; }
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .gallery-carousel {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+    }
+    .gallery-carousel::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-powder-50 text-ink-800 antialiased">
+  <header class="sticky top-0 z-50 border-b border-powder-200/80 bg-powder-50/90 backdrop-blur-md">
+    <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+      <a href="#hero" class="flex items-center gap-2">
+        <span class="flex h-9 w-9 items-center justify-center rounded-full bg-blush-100 text-blush-400">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4" aria-hidden="true">
+            <path d="M12 2.25c.41 0 .75.34.75.75v1.13a8.87 8.87 0 0 1 7.12 7.12h1.13a.75.75 0 0 1 0 1.5h-1.13a8.87 8.87 0 0 1-7.12 7.12v1.13a.75.75 0 0 1-1.5 0v-1.13a8.87 8.87 0 0 1-7.12-7.12H2.25a.75.75 0 0 1 0-1.5h1.13A8.87 8.87 0 0 1 10.5 4.13V3c0-.41.34-.75.75-.75Z" />
+          </svg>
+        </span>
+        <span data-bind="name" class="font-display text-2xl font-semibold tracking-wide text-ink-900">Luxe Nails</span>
+      </a>
+
+      <nav id="desktop-nav" class="hidden items-center gap-4 text-sm font-medium text-ink-700 lg:flex xl:gap-7" aria-label="Основна навігація">
+        <a href="#benefits" class="transition hover:text-blush-400">Переваги</a>
+        <a href="#gallery" class="transition hover:text-blush-400">Галерея</a>
+        <a href="#prices" class="transition hover:text-blush-400">Прайс</a>
+        <a href="#masters" class="transition hover:text-blush-400">Майстри</a>
+        <a href="#reviews" class="transition hover:text-blush-400">Відгуки</a>
+        <a href="#faq" class="transition hover:text-blush-400">Питання</a>
+        <a href="#booking" class="transition hover:text-blush-400">Запис</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a
+          href="#booking"
+          class="hidden rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-powder-50 shadow-sm transition hover:bg-ink-800 sm:px-5 lg:inline-flex"
+        >
+          Записатися
+        </a>
+        <button
+          type="button"
+          id="menu-toggle"
+          class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-powder-300 text-ink-900 lg:hidden"
+          aria-expanded="false"
+          aria-controls="mobile-nav"
+          aria-label="Відкрити меню"
+        >
+          <span class="sr-only">Меню</span>
+          <svg id="menu-icon-open" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="menu-icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hidden h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-nav" class="hidden border-t border-powder-200 bg-powder-50 px-4 py-4 lg:hidden" hidden>
+      <nav class="flex flex-col gap-1 text-base font-medium text-ink-800" aria-label="Мобільна навігація">
+        <a href="#benefits" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Переваги</a>
+        <a href="#gallery" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Галерея</a>
+        <a href="#prices" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Прайс</a>
+        <a href="#masters" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Майстри</a>
+        <a href="#reviews" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Відгуки</a>
+        <a href="#faq" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Питання</a>
+        <a href="#booking" class="rounded-2xl px-3 py-3 hover:bg-blush-50">Запис</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-blush-100/80 blur-3xl"></div>
+        <div class="absolute right-0 top-20 h-80 w-80 rounded-full bg-powder-200/70 blur-3xl"></div>
+      </div>
+
+      <div class="relative mx-auto grid max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
+        <div>
+          <p data-bind="slogan" class="mb-4 text-xs font-semibold uppercase tracking-[0.28em] text-blush-400"></p>
+          <h1 data-bind="tagline" class="font-display text-5xl font-semibold leading-[1.1] text-ink-900 sm:text-6xl lg:text-7xl"></h1>
+          <p data-bind="description" class="mt-6 max-w-xl text-lg leading-relaxed text-ink-700"></p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+            <a
+              href="#booking"
+              class="inline-flex items-center justify-center rounded-full bg-blush-300 px-8 py-3.5 text-base font-semibold text-ink-900 shadow-sm transition hover:bg-blush-400 hover:text-white"
+            >
+              Записатися
+            </a>
+            <a
+              href="#prices"
+              class="inline-flex items-center justify-center rounded-full border border-powder-300 bg-white/60 px-8 py-3.5 text-base font-semibold text-ink-800 transition hover:border-blush-300 hover:bg-blush-50"
+            >
+              Дивитися прайс
+            </a>
+          </div>
+          <dl id="hero-stats" class="mt-10 grid max-w-md grid-cols-3 gap-4 text-center sm:text-left"></dl>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-[2.5rem] bg-gradient-to-br from-blush-100 via-powder-100 to-powder-200 opacity-80 blur-sm"></div>
+          <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/50 p-3 shadow-xl shadow-powder-300/40">
+            <img
+              id="hero-image"
+              src=""
+              alt=""
+              class="h-[420px] w-full rounded-[1.5rem] object-cover sm:h-[520px]"
+            />
+            <div class="absolute bottom-8 left-8 right-8 rounded-2xl bg-powder-50/90 p-4 backdrop-blur">
+              <p id="hero-card-title" class="font-display text-xl text-ink-900"></p>
+              <p id="hero-card-text" class="mt-1 text-sm text-ink-700"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="benefits" class="bg-white/40 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p id="benefits-eyebrow" class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400"></p>
+          <h2 id="benefits-title" class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl"></h2>
+          <p id="benefits-intro" class="mt-4 text-ink-700"></p>
+        </div>
+        <div id="benefits-grid" class="mt-12 grid gap-6 md:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400">Галерея робіт</p>
+          <h2 class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl">Блиск, який видно з фото</h2>
+          <p class="mt-4 text-ink-700">Живі роботи майстрів — без фільтрів «для стрічки».</p>
+        </div>
+        <div id="gallery-grid" class="mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3"></div>
+        <div id="gallery-dots" class="mt-6 hidden justify-center gap-2" aria-label="Фото галереї"></div>
+      </div>
+    </section>
+
+    <section id="prices" class="bg-white/40 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400">Прайс-лист</p>
+            <h2 class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl">Прозорі ціни без сюрпризів</h2>
+          </div>
+          <p class="max-w-md text-ink-700">У вартість входить консультація по формі, підбір нюансу кольору та догляд за кутикулою.</p>
+        </div>
+        <div id="price-grid" class="mt-12 grid gap-6 lg:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <section id="masters" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400">Команда</p>
+          <h2 class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl">Майстри, яким довіряють руки</h2>
+          <p class="mt-4 text-ink-700">Оберіть спеціалізацію — або довірте підбір адміністратору.</p>
+        </div>
+        <div id="masters-grid" class="mt-12 grid gap-6 md:grid-cols-3"></div>
+      </div>
+    </section>
+
+    <section id="reviews" class="bg-white/40 py-16 sm:py-24">
+      <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400">Відгуки</p>
+          <h2 class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl">Що кажуть наші клієнтки</h2>
+          <p id="reviews-caption" class="mt-4 text-ink-700"></p>
+        </div>
+        <div id="reviews-grid" class="mt-12 grid gap-6 md:grid-cols-2"></div>
+      </div>
+    </section>
+
+    <section id="faq" class="py-16 sm:py-24">
+      <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <p class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-400">Питання</p>
+          <h2 class="mt-3 font-display text-4xl font-semibold text-ink-900 sm:text-5xl">Перед записом</h2>
+        </div>
+        <div id="faq-list" class="mt-12 space-y-3"></div>
+      </div>
+    </section>
+
+    <section id="booking" class="bg-ink-900 py-16 text-powder-50 sm:py-24">
+      <div class="mx-auto grid max-w-6xl gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <p id="booking-eyebrow" class="text-xs font-semibold uppercase tracking-[0.28em] text-blush-300"></p>
+          <h2 id="booking-title" class="mt-3 font-display text-4xl font-semibold sm:text-5xl"></h2>
+          <p id="booking-text" class="mt-4 max-w-md text-powder-200"></p>
+          <ul class="mt-10 space-y-5 text-sm">
+            <li>
+              <p class="text-powder-300">Адреса</p>
+              <a id="contact-address" href="#" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-lg transition hover:text-blush-200"></a>
+            </li>
+            <li>
+              <p class="text-powder-300">Телефон</p>
+              <a id="contact-phone" href="#" class="mt-1 inline-block text-lg transition hover:text-blush-200"></a>
+            </li>
+            <li>
+              <p class="text-powder-300">Графік</p>
+              <p id="contact-hours" class="mt-1 text-lg"></p>
+            </li>
+            <li>
+              <p class="text-powder-300">Instagram</p>
+              <a id="contact-instagram" href="#" target="_blank" rel="noopener noreferrer" class="mt-1 inline-block text-lg transition hover:text-blush-200"></a>
+            </li>
+          </ul>
+          <div class="mt-8 overflow-hidden rounded-3xl border border-white/10">
+            <iframe
+              id="contact-map"
+              title="Карта салону Luxe Nails"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              class="h-56 w-full border-0 grayscale"
+              src=""
+            ></iframe>
+          </div>
+        </div>
+
+        <form
+          id="booking-form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          class="rounded-3xl bg-powder-50 p-6 text-ink-800 shadow-xl shadow-black/20 sm:p-8"
+          novalidate
+        >
+          <input type="hidden" name="access_key" id="web3forms-key" value="" />
+          <input type="hidden" name="subject" id="web3forms-subject" value="" />
+          <input type="checkbox" name="botcheck" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true" />
+          <div id="form-success" class="hidden text-center py-10">
+            <div class="mx-auto mb-5 flex h-14 w-14 items-center justify-center rounded-full bg-blush-100 text-blush-400">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />
+              </svg>
+            </div>
+            <p class="font-display text-3xl text-ink-900">Заявку надіслано</p>
+            <p class="mt-3 text-ink-700">Дякуємо за довіру. Адміністратор підтвердить запис протягом 15 хвилин у робочі години.</p>
+          </div>
+          <div id="form-fields" class="grid gap-5">
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Ім’я</span>
+              <input
+                type="text"
+                name="name"
+                id="field-name"
+                required
+                placeholder="Тетяна"
+                class="field-input w-full rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              />
+              <p id="error-name" class="mt-1.5 hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Телефон</span>
+              <input
+                type="tel"
+                name="phone"
+                id="field-phone"
+                required
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="+380XXXXXXXXX"
+                class="field-input w-full rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              />
+              <p id="error-phone" class="mt-1.5 hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Послуга</span>
+              <select
+                name="service"
+                id="service-select"
+                required
+                class="field-input w-full rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              >
+                <option value="">Оберіть послугу</option>
+              </select>
+              <p id="error-service" class="mt-1.5 hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Бажана дата</span>
+              <input
+                type="date"
+                name="date"
+                id="field-date"
+                required
+                class="field-input w-full rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              />
+              <p id="error-date" class="mt-1.5 hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Бажаний час</span>
+              <select
+                name="time"
+                id="field-time"
+                required
+                class="field-input w-full rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              >
+                <option value="">Оберіть час</option>
+              </select>
+              <p id="error-time" class="mt-1.5 hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            </label>
+            <label class="block">
+              <span class="mb-2 block text-sm font-medium">Коментар</span>
+              <textarea
+                name="comment"
+                rows="3"
+                placeholder="Бажаний майстер, дизайн…"
+                class="w-full resize-none rounded-2xl border border-powder-300 bg-white px-4 py-3 outline-none transition focus:border-blush-300 focus:ring-2 focus:ring-blush-100"
+              ></textarea>
+            </label>
+            <label class="flex items-start gap-3 text-sm leading-relaxed">
+              <input
+                type="checkbox"
+                name="consent"
+                id="field-consent"
+                value="Так"
+                required
+                class="mt-1 h-4 w-4 shrink-0 rounded border-powder-300 text-ink-900"
+              />
+              <span>Погоджуюсь на обробку персональних даних для запису</span>
+            </label>
+            <p id="error-consent" class="hidden text-sm text-[#9B2C2C]" role="alert"></p>
+            <button
+              type="submit"
+              id="form-submit"
+              class="rounded-full bg-ink-900 px-6 py-3.5 text-sm font-semibold text-powder-50 transition hover:bg-ink-800 disabled:opacity-60"
+            >
+              Надіслати заявку
+            </button>
+            <p id="form-status" class="hidden text-center text-sm font-medium text-blush-400" role="status"></p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-powder-200 bg-powder-50 py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 text-sm text-ink-700 sm:flex-row sm:px-6 lg:px-8">
+      <p data-bind="name" class="font-display text-lg text-ink-900"></p>
+      <p id="footer-copy"></p>
+    </div>
+    <p id="portfolio-credit" class="mx-auto mt-4 hidden max-w-6xl px-4 text-center text-xs text-ink-700/80 sm:px-6 lg:px-8"></p>
+  </footer>
+
+  <div id="lightbox" class="fixed inset-0 z-[80] hidden items-center justify-center bg-ink-900/90 p-4" role="dialog" aria-modal="true" aria-label="Перегляд фото">
+    <button type="button" id="lightbox-close" class="absolute right-5 top-5 rounded-full bg-powder-50/90 px-4 py-2 text-sm font-semibold text-ink-900">Закрити</button>
+    <img id="lightbox-image" src="" alt="" class="max-h-[90vh] max-w-full rounded-2xl object-contain shadow-2xl" />
+  </div>
+
+  <div id="mobile-cta" class="fixed inset-x-0 bottom-0 z-40 border-t border-powder-200 bg-powder-50/95 px-4 py-3 backdrop-blur transition duration-300 lg:hidden">
+    <div class="mx-auto flex max-w-6xl items-center gap-2">
+      <a href="#booking" class="flex-1 rounded-full bg-ink-900 py-3 text-center text-sm font-semibold text-powder-50">Записатися</a>
+      <a id="cta-telegram" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#2AABEE] text-white" aria-label="Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M21.5 3.4 18.4 20c-.2 1-.8 1.2-1.6.8l-4.5-3.3-2.2 2.1c-.2.3-.5.5-.9.5l.3-4.7 8.6-7.8c.4-.3-.1-.5-.6-.2l-10.6 6.7-4.6-1.4c-1-.3-1-.9.2-1.4L20 2.6c.8-.3 1.5.2 1.5.8Z"/></svg>
+      </a>
+      <a id="cta-viber" href="#" class="inline-flex h-12 w-12 items-center justify-center rounded-full bg-[#7360F2] text-white" aria-label="Viber">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-5 w-5" aria-hidden="true"><path d="M12.04 2c-5.5 0-10 4.2-10 9.4 0 1.7.5 3.3 1.4 4.7L2 22l6-1.6c1.3.7 2.7 1 4.1 1 5.5 0 10-4.2 10-9.4S17.54 2 12.04 2Zm5.1 13.4c-.2.6-1.2 1.1-1.7 1.2-.4.1-.9.1-1.5 0-.3-.1-.8-.2-1.4-.5-2.4-1.1-4-3.5-4.1-3.6-.2-.2-1.3-1.7-1.3-3.3 0-1.5.8-2.3 1.1-2.6.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5.2.6.7 2 .7 2.1.1.1.1.3 0 .4l-.3.4c-.1.2-.3.3-.4.5-.2.1-.3.3-.1.6.1.2.6 1 1.3 1.6.9.8 1.6 1 1.8 1.1.2.1.4.1.5-.1l.7-.8c.1-.2.3-.2.5-.1.2.1 1.7.8 2 .9.3.2.5.2.6.4.1.3 0 .9-.2 1.4Z"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="fixed bottom-6 right-6 z-40 hidden flex-col items-end gap-3 lg:flex">
+    <div id="fab-menu" class="hidden flex-col gap-2">
+      <a id="fab-telegram" href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 rounded-full bg-[#2AABEE] px-4 py-2 text-sm font-semibold text-white shadow-lg">Telegram</a>
+      <a id="fab-viber" href="#" class="inline-flex items-center gap-2 rounded-full bg-[#7360F2] px-4 py-2 text-sm font-semibold text-white shadow-lg">Viber</a>
+    </div>
+    <button type="button" id="fab-toggle" class="inline-flex h-14 w-14 items-center justify-center rounded-full bg-ink-900 text-powder-50 shadow-xl" aria-expanded="false" aria-controls="fab-menu" aria-label="Написати в месенджер">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-7 w-7" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75h.008v.008H8.625V9.75Zm3.375 0h.008v.008H12V9.75Zm3.375 0h.008v.008h-.008V9.75Zm-7.5 9.75a9 9 0 1 0-2.28-7.72L3 21l6.03-1.59c.77.22 1.58.34 2.4.34Z" />
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    const config = window.SITE_CONFIG;
+
+    const ICONS = {
+      shield:
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.957 11.957 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z" />',
+      clock:
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />',
+      spark:
+        '<path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456Z" />',
+    };
+
+    function escapeHtml(value) {
+      return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;");
+    }
+
+    function initGalleryCarousel(track, dots, isCarousel) {
+      if (!isCarousel) {
+        dots.className = "hidden";
+        dots.innerHTML = "";
+        return;
+      }
+
+      const slides = Array.from(track.querySelectorAll("[data-gallery-index]"));
+      dots.className = "mt-6 flex justify-center gap-2 md:hidden";
+      dots.innerHTML = slides
+        .map(
+          (_, index) =>
+            `<button type="button" class="gallery-dot h-2.5 w-2.5 rounded-full bg-powder-300" data-dot="${index}" aria-label="Фото ${index + 1}"></button>`
+        )
+        .join("");
+
+      function setActiveDot(index) {
+        dots.querySelectorAll(".gallery-dot").forEach((dot, i) => {
+          const active = i === index;
+          dot.classList.toggle("bg-ink-900", active);
+          dot.classList.toggle("bg-powder-300", !active);
+          dot.setAttribute("aria-current", active ? "true" : "false");
+        });
+      }
+
+      setActiveDot(0);
+
+      if ("IntersectionObserver" in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            if (window.matchMedia("(min-width: 768px)").matches) return;
+            const visible = entries
+              .filter((entry) => entry.isIntersecting)
+              .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+            if (!visible) return;
+            setActiveDot(Number(visible.target.dataset.galleryIndex));
+          },
+          { root: track, threshold: [0.45, 0.6, 0.75] }
+        );
+        slides.forEach((slide) => observer.observe(slide));
+      }
+
+      dots.addEventListener("click", (event) => {
+        const dot = event.target.closest("[data-dot]");
+        if (!dot) return;
+        const slide = track.querySelector('[data-gallery-index="' + dot.dataset.dot + '"]');
+        if (slide) slide.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+      });
+    }
+
+    function renderSite() {
+      document.title = config.name + " — манікюрний салон";
+      const meta = document.querySelector('meta[name="description"]');
+      if (meta) meta.setAttribute("content", config.description);
+      const pageTitle = config.name + " — манікюрний салон";
+      const setMeta = (selector, attr, value) => {
+        const el = document.querySelector(selector);
+        if (el) el.setAttribute(attr, value);
+      };
+      setMeta('meta[property="og:title"]', "content", pageTitle);
+      setMeta('meta[property="og:description"]', "content", config.description);
+      setMeta('meta[name="twitter:title"]', "content", pageTitle);
+      setMeta('meta[name="twitter:description"]', "content", config.description);
+
+      const schema = {
+        "@context": "https://schema.org",
+        "@type": "NailSalon",
+        name: config.name,
+        description: config.description,
+        image: config.hero.image,
+        telephone: config.phone,
+        address: {
+          "@type": "PostalAddress",
+          streetAddress: config.address.street,
+          addressLocality: config.address.city,
+          postalCode: config.address.postalCode,
+          addressCountry: "UA",
+        },
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: config.address.lat,
+          longitude: config.address.lng,
+        },
+        openingHours: config.hours.schema,
+        aggregateRating: {
+          "@type": "AggregateRating",
+          ratingValue: String(config.rating.value),
+          reviewCount: String(config.rating.count),
+        },
+      };
+      const schemaEl = document.getElementById("schema-nailsalon");
+      if (schemaEl) schemaEl.textContent = JSON.stringify(schema);
+
+      document.querySelectorAll("[data-bind='name']").forEach((el) => {
+        el.textContent = config.name;
+      });
+      document.querySelector("[data-bind='slogan']").textContent = config.slogan;
+      document.querySelector("[data-bind='tagline']").innerHTML = escapeHtml(config.tagline).replace(/\n/g, "<br />");
+      document.querySelector("[data-bind='description']").textContent = config.description;
+
+      document.getElementById("hero-stats").innerHTML = config.stats
+        .map(
+          (item) =>
+            `<div><dt class="text-xs uppercase tracking-wider text-ink-700/70">${escapeHtml(item.label)}</dt><dd class="font-display text-3xl font-semibold text-ink-900">${escapeHtml(item.value)}</dd></div>`
+        )
+        .join("");
+
+      const heroImg = document.getElementById("hero-image");
+      heroImg.src = config.hero.image;
+      heroImg.alt = config.hero.imageAlt;
+      document.getElementById("hero-card-title").textContent = config.hero.cardTitle;
+      document.getElementById("hero-card-text").textContent = config.hero.cardText;
+
+      document.getElementById("benefits-eyebrow").textContent = config.benefits.eyebrow;
+      document.getElementById("benefits-title").textContent = config.benefits.title;
+      document.getElementById("benefits-intro").textContent = config.benefits.intro;
+      document.getElementById("benefits-grid").innerHTML = config.benefits.items
+        .map(
+          (item) => `
+          <article class="rounded-3xl border border-powder-200 bg-powder-50 p-8 shadow-sm">
+            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-blush-100 text-blush-400">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-6 w-6" aria-hidden="true">${ICONS[item.icon] || ICONS.spark}</svg>
+            </div>
+            <h3 class="font-display text-2xl font-semibold text-ink-900">${escapeHtml(item.title)}</h3>
+            <p class="mt-3 leading-relaxed text-ink-700">${escapeHtml(item.text)}</p>
+          </article>`
+        )
+        .join("");
+
+      const galleryTrack = document.getElementById("gallery-grid");
+      const galleryDots = document.getElementById("gallery-dots");
+      const isCarousel = config.galleryLayout !== "grid";
+      const slideClass = isCarousel
+        ? "group w-[80%] min-w-[80%] shrink-0 snap-center overflow-hidden rounded-3xl border border-powder-200 bg-powder-100 focus:outline-none focus:ring-2 focus:ring-blush-300 md:min-w-0 md:w-auto md:shrink md:snap-none"
+        : "group overflow-hidden rounded-3xl border border-powder-200 bg-powder-100 focus:outline-none focus:ring-2 focus:ring-blush-300";
+
+      galleryTrack.className = isCarousel
+        ? "gallery-carousel mt-12 flex gap-3 overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 md:gap-4 md:overflow-visible lg:grid-cols-3"
+        : "mt-12 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-3";
+
+      galleryTrack.innerHTML = config.gallery
+        .map(
+          (photo, index) => `
+          <button type="button" class="${slideClass}" data-gallery-index="${index}" aria-label="${escapeHtml(photo.alt)}">
+            <img src="${escapeHtml(photo.src)}" alt="${escapeHtml(photo.alt)}" class="h-44 w-full object-cover transition duration-300 group-hover:scale-105 sm:h-56 lg:h-64" />
+          </button>`
+        )
+        .join("");
+
+      document.querySelectorAll("#gallery-grid img").forEach((img) => {
+        img.addEventListener("error", () => {
+          const card = img.closest("button");
+          if (card) {
+            card.hidden = true;
+            const dot = galleryDots.querySelector('[data-dot="' + card.dataset.galleryIndex + '"]');
+            if (dot) dot.hidden = true;
+          }
+        });
+      });
+
+      initGalleryCarousel(galleryTrack, galleryDots, isCarousel);
+
+      document.getElementById("price-grid").innerHTML = config.prices
+        .map((category) => {
+          const cardClass = category.featured
+            ? "flex h-full flex-col rounded-3xl border border-blush-200 bg-blush-50 px-8 pt-8 pb-10 shadow-lg shadow-blush-100"
+            : "flex h-full flex-col rounded-3xl border border-powder-200 bg-white/70 px-8 pt-8 pb-10";
+          const lineClass = category.featured ? "border-blush-200" : "border-powder-200";
+          const badge = category.featured
+            ? `<p class="mb-2 text-xs font-semibold uppercase tracking-widest text-blush-400">${escapeHtml(category.badge || "")}</p>`
+            : "";
+          const rows = category.items
+            .map((service, index) => {
+              const border = index < category.items.length - 1 ? `border-b ${lineClass} pb-3` : "";
+              return `<li class="flex items-center justify-between ${border}"><span>${escapeHtml(service.name)}</span><span class="font-semibold">${escapeHtml(service.price)}</span></li>`;
+            })
+            .join("");
+          return `<article class="${cardClass}">${badge}<h3 class="font-display text-3xl text-ink-900">${escapeHtml(category.name)}</h3><p class="mt-2 text-sm text-ink-700">${escapeHtml(category.description)}</p><ul class="mt-8 shrink-0 space-y-4 text-sm">${rows}</ul><div class="mt-auto pt-8"><a href="#booking" class="inline-flex w-full items-center justify-center rounded-full bg-ink-900 px-5 py-2.5 text-sm font-semibold text-powder-50 transition hover:bg-ink-800" data-book-category="${escapeHtml(category.id)}">Записатися на ${escapeHtml(category.name.toLowerCase())}</a></div></article>`;
+        })
+        .join("");
+
+      document.getElementById("masters-grid").innerHTML = config.masters
+        .map(
+          (master) => `
+          <article class="overflow-hidden rounded-3xl border border-powder-200 bg-powder-50 shadow-sm">
+            <img src="${escapeHtml(master.photo)}" alt="${escapeHtml(master.name)}" class="h-64 w-full object-cover" />
+            <div class="p-6">
+              <h3 class="font-display text-2xl font-semibold text-ink-900">${escapeHtml(master.name)}</h3>
+              <p class="mt-1 text-sm font-medium text-blush-400">${escapeHtml(master.experience)}</p>
+              <p class="mt-3 text-ink-700">${escapeHtml(master.specialty)}</p>
+            </div>
+          </article>`
+        )
+        .join("");
+
+      document.getElementById("reviews-caption").textContent = config.reviewsCaption;
+      const stars =
+        '<span class="text-blush-400" aria-hidden="true">★★★★★</span><span class="sr-only">5 зірок</span>';
+      document.getElementById("reviews-grid").innerHTML = config.reviews
+        .map(
+          (review) => `
+          <article class="rounded-3xl border border-powder-200 bg-powder-50 p-8 shadow-sm">
+            <div class="flex items-center justify-between gap-3">
+              <h3 class="font-display text-2xl font-semibold text-ink-900">${escapeHtml(review.name)}</h3>
+              ${stars}
+            </div>
+            <p class="mt-4 leading-relaxed text-ink-700">${escapeHtml(review.text)}</p>
+            <p class="mt-4 text-xs uppercase tracking-wider text-ink-700/70">${escapeHtml(review.source)}</p>
+          </article>`
+        )
+        .join("");
+
+      document.getElementById("faq-list").innerHTML = config.faq
+        .map(
+          (item, index) => `
+          <div class="rounded-3xl border border-powder-200 bg-white/70">
+            <h3>
+              <button type="button" class="faq-trigger flex w-full items-center justify-between gap-4 px-6 py-5 text-left font-medium text-ink-900" aria-expanded="false" aria-controls="faq-panel-${index}" id="faq-btn-${index}">
+                <span>${escapeHtml(item.q)}</span>
+                <span class="faq-icon text-blush-400" aria-hidden="true">+</span>
+              </button>
+            </h3>
+            <div id="faq-panel-${index}" class="hidden px-6 pb-5 text-ink-700" role="region" aria-labelledby="faq-btn-${index}">${escapeHtml(item.a)}</div>
+          </div>`
+        )
+        .join("");
+
+      document.getElementById("booking-eyebrow").textContent = config.booking.eyebrow;
+      document.getElementById("booking-title").textContent = config.booking.title;
+      document.getElementById("booking-text").textContent = config.booking.text;
+
+      const mapUrl = "https://maps.google.com/?q=" + config.address.lat + "," + config.address.lng;
+      const mapEmbed =
+        "https://maps.google.com/maps?q=" +
+        config.address.lat +
+        "," +
+        config.address.lng +
+        "&z=16&output=embed";
+
+      const addressEl = document.getElementById("contact-address");
+      addressEl.textContent = config.address.full;
+      addressEl.href = mapUrl;
+
+      const phoneEl = document.getElementById("contact-phone");
+      phoneEl.textContent = config.phoneDisplay;
+      phoneEl.href = "tel:" + config.phone;
+
+      document.getElementById("contact-hours").textContent = config.hours.display;
+
+      const demoMode = Boolean(config.portfolio && config.portfolio.enabled);
+      function applyLink(el, url, newTab) {
+        el.href = demoMode ? "#" : url;
+        if (demoMode || !newTab) {
+          el.removeAttribute("target");
+          el.removeAttribute("rel");
+        } else {
+          el.setAttribute("target", "_blank");
+          el.setAttribute("rel", "noopener noreferrer");
+        }
+      }
+
+      const instagramEl = document.getElementById("contact-instagram");
+      applyLink(instagramEl, config.instagram, true);
+      instagramEl.textContent = config.instagramHandle;
+
+      const mapEl = document.getElementById("contact-map");
+      mapEl.src = mapEmbed;
+
+      ["cta-telegram", "fab-telegram"].forEach((id) => {
+        applyLink(document.getElementById(id), config.telegram, true);
+      });
+      ["cta-viber", "fab-viber"].forEach((id) => {
+        applyLink(document.getElementById(id), config.viber, false);
+      });
+
+      const serviceSelect = document.getElementById("service-select");
+      config.prices.forEach((category) => {
+        category.items.forEach((service) => {
+          const option = document.createElement("option");
+          option.value = category.name + " — " + service.name;
+          option.textContent = category.name + " — " + service.name;
+          option.dataset.category = category.id;
+          serviceSelect.appendChild(option);
+        });
+      });
+
+      const timeSelect = document.getElementById("field-time");
+      for (let hour = 10; hour <= 20; hour += 1) {
+        const value = String(hour).padStart(2, "0") + ":00";
+        const option = document.createElement("option");
+        option.value = value;
+        option.textContent = value;
+        timeSelect.appendChild(option);
+      }
+
+      setDateMin();
+
+      document.getElementById("web3forms-key").value = config.web3formsKey;
+      document.getElementById("web3forms-subject").value = "Новий запис — " + config.name;
+      document.getElementById("footer-copy").textContent =
+        "© " + config.year + " Усі права захищено. " + config.footerNote;
+
+      const credit = document.getElementById("portfolio-credit");
+      if (demoMode) {
+        credit.classList.remove("hidden");
+        credit.innerHTML =
+          "Демо-сайт · Створено: " +
+          escapeHtml(config.portfolio.author) +
+          ' · <a href="' +
+          escapeHtml(config.portfolio.contactUrl) +
+          '" class="underline decoration-blush-300 underline-offset-2 transition hover:text-blush-400">Замовити такий сайт →</a>';
+      } else {
+        credit.classList.add("hidden");
+        credit.innerHTML = "";
+      }
+    }
+
+    function setDateMin() {
+      const dateInput = document.getElementById("field-date");
+      const now = new Date();
+      const month = String(now.getMonth() + 1).padStart(2, "0");
+      const day = String(now.getDate()).padStart(2, "0");
+      dateInput.min = now.getFullYear() + "-" + month + "-" + day;
+    }
+
+    function formatUaPhone(value) {
+      let digits = String(value).replace(/\D/g, "");
+      while (digits.startsWith("380") || digits.startsWith("38")) {
+        if (digits.startsWith("380")) digits = digits.slice(3);
+        else digits = digits.slice(2);
+      }
+      digits = digits.replace(/^0+/, "");
+      digits = digits.slice(0, 9);
+      return "+380" + digits;
+    }
+
+    function isValidUaPhone(value) {
+      return /^\+380\d{9}$/.test(value);
+    }
+
+    function showFieldError(name, message) {
+      const error = document.getElementById("error-" + name);
+      const field = document.getElementById(name === "service" ? "service-select" : "field-" + name);
+      if (error) {
+        error.textContent = message;
+        error.classList.toggle("hidden", !message);
+      }
+      if (field) {
+        field.classList.toggle("border-[#9B2C2C]", Boolean(message));
+        field.setAttribute("aria-invalid", message ? "true" : "false");
+      }
+    }
+
+    function clearFieldErrors() {
+      ["name", "phone", "service", "date", "time", "consent"].forEach((name) => showFieldError(name, ""));
+    }
+
+    function validateBookingForm() {
+      clearFieldErrors();
+      const name = document.getElementById("field-name").value.trim();
+      const phone = document.getElementById("field-phone").value.trim();
+      const service = document.getElementById("service-select").value;
+      const date = document.getElementById("field-date").value;
+      const time = document.getElementById("field-time").value;
+      const consent = document.getElementById("field-consent").checked;
+      let valid = true;
+      let firstInvalid = null;
+
+      if (!name) {
+        showFieldError("name", "Вкажіть ім’я, щоб ми знали, як до вас звертатися.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-name");
+      }
+      if (!phone) {
+        showFieldError("phone", "Введіть номер у форматі +380XXXXXXXXX.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-phone");
+      } else if (!isValidUaPhone(phone)) {
+        showFieldError("phone", "Номер має бути +380 і ще 9 цифр, без пробілів і дужок.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-phone");
+      }
+      if (!service) {
+        showFieldError("service", "Оберіть послугу зі списку.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("service-select");
+      }
+      if (!date) {
+        showFieldError("date", "Оберіть дату візиту.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-date");
+      } else if (date < document.getElementById("field-date").min) {
+        showFieldError("date", "Дата не може бути в минулому.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-date");
+      }
+      if (!time) {
+        showFieldError("time", "Оберіть зручний час з 10:00 до 20:00.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-time");
+      }
+      if (!consent) {
+        showFieldError("consent", "Потрібна згода на обробку даних, щоб ми могли підтвердити запис.");
+        valid = false;
+        firstInvalid = firstInvalid || document.getElementById("field-consent");
+      }
+
+      if (firstInvalid) firstInvalid.focus();
+      return valid;
+    }
+
+    renderSite();
+
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImage = document.getElementById("lightbox-image");
+
+    function openLightbox(src, alt) {
+      lightboxImage.src = src;
+      lightboxImage.alt = alt;
+      lightbox.classList.remove("hidden");
+      lightbox.classList.add("flex");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeLightbox() {
+      lightbox.classList.add("hidden");
+      lightbox.classList.remove("flex");
+      lightboxImage.src = "";
+      document.body.style.overflow = "";
+    }
+
+    document.getElementById("gallery-grid").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-gallery-index]");
+      if (!button) return;
+      const photo = config.gallery[Number(button.dataset.galleryIndex)];
+      if (photo) openLightbox(photo.src, photo.alt);
+    });
+
+    lightbox.addEventListener("click", (event) => {
+      if (event.target === lightbox || event.target.id === "lightbox-close") closeLightbox();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeLightbox();
+        closeMobileMenu();
+      }
+    });
+
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileNav = document.getElementById("mobile-nav");
+    const iconOpen = document.getElementById("menu-icon-open");
+    const iconClose = document.getElementById("menu-icon-close");
+
+    function openMobileMenu() {
+      mobileNav.classList.remove("hidden");
+      mobileNav.removeAttribute("hidden");
+      menuToggle.setAttribute("aria-expanded", "true");
+      menuToggle.setAttribute("aria-label", "Закрити меню");
+      iconOpen.classList.add("hidden");
+      iconClose.classList.remove("hidden");
+    }
+
+    function closeMobileMenu() {
+      mobileNav.classList.add("hidden");
+      mobileNav.setAttribute("hidden", "");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Відкрити меню");
+      iconOpen.classList.remove("hidden");
+      iconClose.classList.add("hidden");
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+      if (expanded) closeMobileMenu();
+      else openMobileMenu();
+    });
+
+    mobileNav.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMobileMenu);
+    });
+
+    const fabToggle = document.getElementById("fab-toggle");
+    const fabMenu = document.getElementById("fab-menu");
+    fabToggle.addEventListener("click", () => {
+      const open = fabToggle.getAttribute("aria-expanded") === "true";
+      fabToggle.setAttribute("aria-expanded", String(!open));
+      fabMenu.classList.toggle("hidden", open);
+      fabMenu.classList.toggle("flex", !open);
+    });
+
+    const mobileCta = document.getElementById("mobile-cta");
+    const bookingForm = document.getElementById("booking-form");
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          const hide = entry.isIntersecting;
+          mobileCta.classList.toggle("translate-y-full", hide);
+          mobileCta.classList.toggle("opacity-0", hide);
+          mobileCta.classList.toggle("pointer-events-none", hide);
+          mobileCta.setAttribute("aria-hidden", String(hide));
+        },
+        { threshold: 0.25 }
+      );
+      observer.observe(bookingForm);
+    }
+
+    const form = document.getElementById("booking-form");
+    const statusEl = document.getElementById("form-status");
+    const submitBtn = document.getElementById("form-submit");
+    const fieldsEl = document.getElementById("form-fields");
+    const successEl = document.getElementById("form-success");
+
+    document.getElementById("faq-list").addEventListener("click", (event) => {
+      const trigger = event.target.closest(".faq-trigger");
+      if (!trigger) return;
+      const panel = document.getElementById(trigger.getAttribute("aria-controls"));
+      const isOpen = trigger.getAttribute("aria-expanded") === "true";
+      document.querySelectorAll(".faq-trigger").forEach((btn) => {
+        btn.setAttribute("aria-expanded", "false");
+        btn.querySelector(".faq-icon").textContent = "+";
+        document.getElementById(btn.getAttribute("aria-controls")).classList.add("hidden");
+      });
+      if (!isOpen) {
+        trigger.setAttribute("aria-expanded", "true");
+        trigger.querySelector(".faq-icon").textContent = "–";
+        panel.classList.remove("hidden");
+      }
+    });
+
+    document.getElementById("price-grid").addEventListener("click", (event) => {
+      const button = event.target.closest("[data-book-category]");
+      if (!button) return;
+      event.preventDefault();
+      const categoryId = button.dataset.bookCategory;
+      const serviceSelect = document.getElementById("service-select");
+      const match = Array.from(serviceSelect.options).find((option) => option.dataset.category === categoryId);
+      if (match) {
+        serviceSelect.value = match.value;
+        showFieldError("service", "");
+      }
+      document.getElementById("booking").scrollIntoView({ behavior: "smooth" });
+      serviceSelect.focus();
+    });
+
+    const phoneInput = document.getElementById("field-phone");
+    phoneInput.addEventListener("focus", () => {
+      if (!phoneInput.value) phoneInput.value = "+380";
+    });
+    phoneInput.addEventListener("input", () => {
+      phoneInput.value = formatUaPhone(phoneInput.value);
+      if (isValidUaPhone(phoneInput.value) || phoneInput.value === "+380") showFieldError("phone", "");
+    });
+    phoneInput.addEventListener("paste", (event) => {
+      event.preventDefault();
+      const pasted = (event.clipboardData || window.clipboardData).getData("text");
+      phoneInput.value = formatUaPhone(pasted);
+      if (isValidUaPhone(phoneInput.value)) showFieldError("phone", "");
+    });
+    phoneInput.addEventListener("blur", () => {
+      if (phoneInput.value === "+380") phoneInput.value = "";
+      if (phoneInput.value && !isValidUaPhone(phoneInput.value)) {
+        showFieldError("phone", "Номер має бути +380 і ще 9 цифр, без пробілів і дужок.");
+      }
+    });
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      statusEl.classList.add("hidden");
+      if (!validateBookingForm()) return;
+      submitBtn.disabled = true;
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          fieldsEl.classList.add("hidden");
+          successEl.classList.remove("hidden");
+          form.reset();
+          setDateMin();
+          return;
+        }
+
+        statusEl.textContent = "Не вдалося надіслати заявку. Спробуйте ще раз або зателефонуйте нам.";
+        statusEl.classList.remove("hidden");
+      } catch (error) {
+        statusEl.textContent = "Немає з’єднання. Перевірте інтернет і спробуйте ще раз.";
+        statusEl.classList.remove("hidden");
+      } finally {
+        submitBtn.disabled = false;
+      }
+    });
+  </script>
+</body>
+</html>
