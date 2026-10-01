@@ -58,7 +58,7 @@
       ],
       rating: { value: 4.9, count: 412 },
       hero: {
-        image: "images/luxe-nails/hero.jpg",
+        image: "images/luxe-nails/hero.webp",
         imageAlt: "Акуратний нюдовий манікюр у салоні Luxe Nails",
         cardTitle: "Нюд, який виглядає дорого",
         cardText: "Без сколів. Без поспіху. З турботою про кутикулу.",
@@ -127,19 +127,19 @@
           name: "Олена Коваль",
           experience: "8 років досвіду",
           specialty: "Нюд, укріплення, чиста кутикула",
-          photo: "images/luxe-nails/master-1.jpg",
+          photo: "images/luxe-nails/master-1.webp",
         },
         {
           name: "Марія Лисенко",
           experience: "6 років досвіду",
           specialty: "Дизайн, френч, складні форми",
-          photo: "images/luxe-nails/master-2.jpg",
+          photo: "images/luxe-nails/master-2.webp",
         },
         {
           name: "Ірина Мельник",
           experience: "5 років досвіду",
           specialty: "Педикюр, SPA, апаратний догляд",
-          photo: "images/luxe-nails/master-3.jpg",
+          photo: "images/luxe-nails/master-3.webp",
         },
       ],
       reviews: [
@@ -189,27 +189,27 @@
       ],
       gallery: [
         {
-          src: "images/luxe-nails/gallery-1.jpg",
+          src: "images/luxe-nails/gallery-1.webp",
           alt: "Манікюр з нюдовим покриттям і акуратним блиском",
         },
         {
-          src: "images/luxe-nails/gallery-2.jpg",
+          src: "images/luxe-nails/gallery-2.webp",
           alt: "Пастельний манікюр після покриття гель-лаком",
         },
         {
-          src: "images/luxe-nails/gallery-3.jpg",
+          src: "images/luxe-nails/gallery-3.webp",
           alt: "Доглянутий манікюр і форма нігтів",
         },
         {
-          src: "images/luxe-nails/gallery-4.jpg",
+          src: "images/luxe-nails/gallery-4.webp",
           alt: "Педикюр з охайним покриттям",
         },
         {
-          src: "images/luxe-nails/gallery-5.jpg",
+          src: "images/luxe-nails/gallery-5.webp",
           alt: "Манікюр і педикюр у ніжній пастельній гамі",
         },
         {
-          src: "images/luxe-nails/gallery-6.jpg",
+          src: "images/luxe-nails/gallery-6.webp",
           alt: "Манікюр з ніжним покриттям крупним планом",
         },
       ],
@@ -229,73 +229,14 @@
       },
     };
   </script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            powder: {
-              50: "#FBF7F3",
-              100: "#F6EDE6",
-              200: "#EEDDD3",
-              300: "#E4C9BB",
-              400: "#D4A99A",
-            },
-            blush: {
-              50: "#FBF4F5",
-              100: "#F7E6E9",
-              200: "#EFC9D0",
-              300: "#E3A8B4",
-              400: "#D4899A",
-            },
-            ink: {
-              700: "#4A4240",
-              800: "#3A3331",
-              900: "#2C2624",
-            },
-          },
-          fontFamily: {
-            display: ['"Cormorant Garamond"', "Georgia", "serif"],
-            sans: ['"Manrope"', "system-ui", "sans-serif"],
-          },
-        },
-      },
-    };
-  </script>
+  <link rel="preload" as="image" href="images/luxe-nails/hero.webp" type="image/webp" fetchpriority="high" />
+  <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&display=swap"
     rel="stylesheet"
   />
-  <style>
-    html { scroll-behavior: smooth; }
-    body { font-family: "Manrope", system-ui, sans-serif; }
-    body { padding-bottom: 5.5rem; }
-    @media (min-width: 1024px) {
-      body { padding-bottom: 0; }
-    }
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-    .gallery-carousel {
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      -webkit-overflow-scrolling: touch;
-    }
-    .gallery-carousel::-webkit-scrollbar {
-      display: none;
-    }
-  </style>
 </head>
 <body class="bg-powder-50 text-ink-800 antialiased">
   <header class="sticky top-0 z-50 border-b border-powder-200/80 bg-powder-50/90 backdrop-blur-md">
@@ -391,8 +332,9 @@
           <div class="relative overflow-hidden rounded-[2rem] border border-white/70 bg-white/50 p-3 shadow-xl shadow-powder-300/40">
             <img
               id="hero-image"
-              src=""
-              alt=""
+              src="images/luxe-nails/hero.webp"
+              alt="Акуратний нюдовий манікюр у салоні Luxe Nails"
+              fetchpriority="high"
               class="h-[420px] w-full rounded-[1.5rem] object-cover sm:h-[520px]"
             />
             <div class="absolute bottom-8 left-8 right-8 rounded-2xl bg-powder-50/90 p-4 backdrop-blur">
