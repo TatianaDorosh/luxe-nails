@@ -21,7 +21,7 @@
     type="image/svg+xml"
     href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23F7E6E9'/%3E%3Cg fill='%23D4899A' transform='translate(4 4)'%3E%3Cpath d='M12 2.25c.41 0 .75.34.75.75v1.13a8.87 8.87 0 0 1 7.12 7.12h1.13a.75.75 0 0 1 0 1.5h-1.13a8.87 8.87 0 0 1-7.12 7.12v1.13a.75.75 0 0 1-1.5 0v-1.13a8.87 8.87 0 0 1-7.12-7.12H2.25a.75.75 0 0 1 0-1.5h1.13A8.87 8.87 0 0 1 10.5 4.13V3c0-.41.34-.75.75-.75Z'/%3E%3C/g%3E%3C/svg%3E"
   />
-  <script type="application/ld+json" id="schema-nailsalon">{"@context":"https://schema.org","@type":"NailSalon","name":"Luxe Nails","description":"Стерильні інструменти, преміальні гель-лаки та майстри, які чують ваш стиль. Запишіться сьогодні — і виходьте з блиском, ніби щойно з обкладинки.","image":"https://luxe-nails-orcin.vercel.app/images/luxe-nails/hero.webp","telephone":"+380671234567","address":{"@type":"PostalAddress","streetAddress":"вул. Велика Васильківська, 24","addressLocality":"Київ","postalCode":"01004","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4398,"longitude":30.5169},"openingHours":"Mo-Su 10:00-21:00","aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"412"}}</script>
+  <script type="application/ld+json" id="schema-nailsalon">{"@context":"https://schema.org","@type":["NailSalon","LocalBusiness"],"name":"Luxe Nails","description":"Стерильні інструменти, преміальні гель-лаки та майстри, які чують ваш стиль. Запишіться сьогодні — і виходьте з блиском, ніби щойно з обкладинки.","url":"https://luxe-nails-orcin.vercel.app/","image":"https://luxe-nails-orcin.vercel.app/images/luxe-nails/hero.jpg","telephone":"+380671234567","priceRange":"₴₴","address":{"@type":"PostalAddress","streetAddress":"вул. Велика Васильківська, 24","addressLocality":"Київ","postalCode":"01004","addressCountry":"UA"},"geo":{"@type":"GeoCoordinates","latitude":50.4398,"longitude":30.5169},"openingHours":"Mo-Su 10:00-21:00","openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:00","closes":"21:00"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"412"}}</script>
   <!-- Для нового клієнта змінюйте лише SITE_CONFIG нижче. -->
   <script>
     window.SITE_CONFIG = {
@@ -51,6 +51,7 @@
         close: "21:00",
         schema: "Mo-Su 10:00-21:00",
       },
+      priceRange: "₴₴",
       stats: [
         { label: "Досвід", value: "8+" },
         { label: "Клієнток", value: "4k" },
@@ -682,13 +683,17 @@
       setMeta('meta[name="twitter:title"]', "content", pageTitle);
       setMeta('meta[name="twitter:description"]', "content", config.description);
 
+      const siteOrigin = (config.siteUrl || "").replace(/\/$/, "");
+      const schemaImage = siteOrigin + "/" + String(config.hero.image || "").replace(/\.webp$/i, ".jpg");
       const schema = {
         "@context": "https://schema.org",
-        "@type": "NailSalon",
+        "@type": ["NailSalon", "LocalBusiness"],
         name: config.name,
         description: config.description,
-        image: (config.siteUrl ? config.siteUrl.replace(/\/$/, "") + "/" : "") + config.hero.image,
+        url: siteOrigin ? siteOrigin + "/" : undefined,
+        image: schemaImage,
         telephone: config.phone,
+        priceRange: config.priceRange || "₴₴",
         address: {
           "@type": "PostalAddress",
           streetAddress: config.address.street,
@@ -702,6 +707,12 @@
           longitude: config.address.lng,
         },
         openingHours: config.hours.schema,
+        openingHoursSpecification: {
+          "@type": "OpeningHoursSpecification",
+          dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          opens: config.hours.open,
+          closes: config.hours.close,
+        },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: String(config.rating.value),
