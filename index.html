@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luxe Nails — манікюрний салон</title>
+  <title>Luxe Nails — манікюр і педикюр у Києві | Запис онлайн</title>
   <meta name="description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Luxe Nails" />
   <meta property="og:locale" content="uk_UA" />
-  <meta property="og:title" content="Luxe Nails — манікюрний салон" />
-  <meta property="og:description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
+  <meta property="og:title" content="Luxe Nails — манікюр і педикюр у Києві | Запис онлайн" />
+  <meta property="og:description" content="Стерильні інструменти, преміальні гель-лаки та майстри, які чують ваш стиль. Запишіться сьогодні — і виходьте з блиском, ніби щойно з обкладинки." />
   <!-- Соцмережі читають ці три теги з HTML, не з JS. Після публікації впишіть siteUrl у SITE_CONFIG і сюди повні адреси: og:url = siteUrl, og:image і twitter:image = siteUrl + /images/luxe-nails/hero.jpg (без подвійного слеша). -->
   <meta property="og:url" content="https://luxe-nails-orcin.vercel.app/" />
-  <meta property="og:image" content="https://luxe-nails-orcin.vercel.app/images/luxe-nails/hero.jpg" />
+  <meta property="og:image" content="https://luxe-nails-orcin.vercel.app/images/luxe-nails/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Luxe Nails — манікюр і педикюр у Києві" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Luxe Nails — манікюрний салон" />
-  <meta name="twitter:description" content="Luxe Nails — стерильний манікюр, ідеальне покриття та педикюр у пастельній атмосфері. Запишіться онлайн за 30 секунд." />
-  <meta name="twitter:image" content="https://luxe-nails-orcin.vercel.app/images/luxe-nails/hero.jpg" />
+  <meta name="twitter:title" content="Luxe Nails — манікюр і педикюр у Києві | Запис онлайн" />
+  <meta name="twitter:description" content="Стерильні інструменти, преміальні гель-лаки та майстри, які чують ваш стиль. Запишіться сьогодні — і виходьте з блиском, ніби щойно з обкладинки." />
+  <meta name="twitter:image" content="https://luxe-nails-orcin.vercel.app/images/luxe-nails/og-image.jpg" />
   <link
     rel="icon"
     type="image/svg+xml"
@@ -26,6 +30,7 @@
   <script>
     window.SITE_CONFIG = {
       name: "Luxe Nails",
+      seoTitle: "Luxe Nails — манікюр і педикюр у Києві | Запис онлайн",
       siteUrl: "https://luxe-nails-orcin.vercel.app",
       slogan: "Салон ніжного догляду",
       tagline: "Ідеальний манікюр,\nякий тримається.",
@@ -701,10 +706,10 @@
     }
 
     function renderSite() {
-      document.title = config.name + " — манікюрний салон";
       const meta = document.querySelector('meta[name="description"]');
       if (meta) meta.setAttribute("content", config.description);
-      const pageTitle = config.name + " — манікюрний салон";
+      const pageTitle = config.seoTitle || config.name;
+      document.title = pageTitle;
       const setMeta = (selector, attr, value) => {
         const el = document.querySelector(selector);
         if (el) el.setAttribute(attr, value);
@@ -947,7 +952,9 @@
       });
 
       const timeSelect = document.getElementById("field-time");
-      for (let hour = 10; hour <= 20; hour += 1) {
+      const openHour = parseHour(config.hours.open);
+      const lastHour = parseHour(config.hours.close) - 1;
+      for (let hour = openHour; hour <= lastHour; hour += 1) {
         const value = String(hour).padStart(2, "0") + ":00";
         const option = document.createElement("option");
         option.value = value;
@@ -978,6 +985,11 @@
         credit.innerHTML = "";
         demoContact.href = "#";
       }
+    }
+
+    function parseHour(value) {
+      const hour = Number(String(value || "").split(":")[0]);
+      return Number.isFinite(hour) ? hour : 10;
     }
 
     function setDateMin() {
@@ -1060,7 +1072,9 @@
         firstInvalid = firstInvalid || document.getElementById("field-date");
       }
       if (!time) {
-        showFieldError("time", "Оберіть зручний час з 10:00 до 20:00.");
+        const firstSlot = String(parseHour(config.hours.open)).padStart(2, "0") + ":00";
+        const lastSlot = String(parseHour(config.hours.close) - 1).padStart(2, "0") + ":00";
+        showFieldError("time", "Оберіть зручний час з " + firstSlot + " до " + lastSlot + ".");
         valid = false;
         firstInvalid = firstInvalid || document.getElementById("field-time");
       }
